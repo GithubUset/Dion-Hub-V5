@@ -1,6 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local Window = Library.CreateLib("Dion Hub V4", "DarkTheme")
+local Window = Library.CreateLib("Dion Hub V5", "DarkTheme")
 
 -- tabs
 
@@ -12,9 +12,9 @@ local Tab3 = Window:NewTab("Soon!")
 
 -- sections
 
-local Section1 = Tab1:NewSection("Beta script")
+local Section1 = Tab1:NewSection("*OP* Scripts")
 
-local Section2 = Tab2:NewSection("UpdateLogs(soon)")
+local Section2 = Tab2:NewSection("UpdateLogs")
 
 -- buttons
 
@@ -584,13 +584,18 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-05/HUB/main/
 
 end)
 
+Section1:NewButton("Admin Commands", "Executes Admin Commands", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Hydro4Music/UniHub/main/HexRAdminPRE'))()
+
+end)
+
 Section2:NewButton("Update Logs", "Views Update Logs", function()
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
 
 	Title = "Update Logs", -- Required
 
-	Text = "Added Update Logs Notify!", -- Required
+	Text = "Added Admin Commands!", -- Required
 
 	Duration = 16
 
